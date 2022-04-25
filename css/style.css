@@ -1,0 +1,325 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/** Fonts
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+**/
+
+/** Color List
+
+Gray Background - #f5f8fa
+Gray Border - #dfdfdf
+gray text- #aaaabc
+Black - #3a4145
+
+**/
+body {
+     background-image: url(img/mountains.jpg);
+     font-size: 62.5%;
+
+}
+
+/**
+.main-wrapper {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     min-height: 100vh;
+     border: 3px solid blue;
+}
+
+**/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.navbar {
+     display: flex;
+     align-items: center;
+     height: 75px;
+     width: 100%;
+     border-bottom: 1px solid #d6d9db;
+     
+}
+
+a:visited {
+     color: black;
+}
+
+.name > a {
+     text-decoration: none;
+     color: black;
+     font-family: 'Merriweather Sans', sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     font-weight: 700;
+     padding-left: 30px;
+     font-size: 1.3rem;
+     
+
+}
+
+.portfolio-link > a {
+     text-decoration: none;
+     color: black;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     font-size: 1.2rem;
+
+
+}
+
+
+.portfolio-link {
+     margin-left: auto;
+}
+
+.contact-me-nav > a {
+     text-decoration: none;
+     color: black;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     font-size: 1.2rem;
+     padding-left: 15px;
+     padding-right: 15px;
+
+}
+
+.bio {
+     margin: 0 auto;
+     display: flex-column;
+     justify-content: center;
+     
+     background-color: #f5f8fa;
+     height: 300px;
+     width: 100%;
+     
+     
+     border-bottom: 1px solid #d6d9db;
+}
+
+.my-name {
+     
+     display: flex;
+     justify-content: center;
+     font-family: 'Merriweather Sans', sans-serif;
+     font-weight: 700;
+     font-size: 4rem;
+     padding-top: 30px;
+
+}
+
+.line-1 {
+     display: flex;
+     justify-content: center;
+     font-family: 'Merriweather Sans', sans-serif;
+     font-size: 1.8rem;
+     color: #aaaabc;
+     padding-top: 30px;
+     font-weight: 100;
+}
+
+.line-2 {
+     display: flex;
+     justify-content: center;
+     font-family: 'Merriweather Sans', sans-serif;
+     font-size: 1.8rem;
+     color: #aaaabc;
+     padding-top: 10px;
+     font-weight: 100;
+}
+
+
+.line-3 {
+     display: flex;
+     justify-content: center;
+     font-family: 'Merriweather Sans', sans-serif;
+     font-size: 1.8rem;
+     color: #aaaabc;
+     padding-top: 10px;
+     font-weight: 100;
+     
+}
+
+.line-3 > a {
+     text-decoration: none;
+     color: blue;
+}
+
+.about-contact-wrapper {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 700px;
+     
+
+}
+
+.about-me {
+     margin-top: 50px;
+     width: 25%;
+     height: 700px;
+}
+.about-me > h4 {
+     
+
+     font-family: 'Merriweather Sans', sans-serif;
+     font-size: 2rem;
+     font-weight: 700;
+     
+}
+
+.bio-text  {
+     padding-top: 20px;
+     font-family: 'Merriweather Sans', sans-serif;
+     font-size: 1.8rem;
+     letter-spacing: 1.5;
+     font-weight: 100;
+     
+     line-height: 1.5;
+     
+}
+
+.contact-me {
+     
+     margin-top: 50px;
+     margin-left: 150px;
+     height: 400px;
+     width: 20%;
+}
+
+.contact-me > h4 {
+     font-family: 'Merriweather Sans', sans-serif;
+     font-size: 2rem;
+     font-weight: 700;
+     padding-left: 40px;
+     padding-bottom: 15px;
+}
+
+.contact-me > ul > li {
+     font-size: 1.7rem;
+     padding-left: 40px;
+     
+}
+
+i {
+     padding-right: 15px;
+}
+
+.contact-me > ul > li > a {
+     color: black;
+     text-decoration: none;
+     font-family: 'Poppins', sans-serif;
+     
+}
+
+.videos > h4{
+     height: 40px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 3rem;
+     text-align: center;
+     padding-top: 30px;
+     padding-bottom: 40px;
+     width: 100%;
+}
+
+.videos-flex > iframe {
+     width: 400px;
+     height: 225px;
+
+}
+
+.videos-flex {
+     margin-top: 50px;
+     display: flex;
+     justify-content: space-around;
+   
+}
+
+.videos-flex-2 {
+     display: flex;
+     justify-content: space-around;
+}
+
+.videos-flex-2 > iframe {
+     width: 400px;
+     height: 225px;
+     margin-top: 50px;
+}
+.contact-form-container {
+     margin-top: 100px;
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+     font-size: 3rem;
+     font-weight: 700;
+}
+
+.contact-box {
+     width: 25%;
+     margin-left: auto;
+     margin-right: auto;
+     display: inline-block;
+     
+     background-color: #fff;
+   
+     margin-top: 25px;   
+}
+
+
+
+.input-field {
+     width: 400px;
+     height: 40px;
+     margin-top: 20px;
+     padding-left: 10px;
+     border: 1px solid #777;
+     border-radius: 14px;
+     outline: none;
+}
+
+.textarea-field {
+     height: 150px;
+     padding-top: 10px;
+}
+
+.btn {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 20px;
+     color: #fff;
+     margin-top: 10px;
+     padding: 10px;
+     background-color: #47c35a;
+     font-size: 1.2rem;
+     border: none;
+     cursor: pointer;
+
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
